@@ -5,6 +5,10 @@ A package that provides multiple customizable buttons for quick use.
 
 ![Demo](https://firebasestorage.googleapis.com/v0/b/mocon-3075b.appspot.com/o/quick_button.gif?alt=media&token=43f15f4e-021c-4a78-88e3-0eae26b37cc3)
 
+### Resources
+
+- [Pub package](https://pub.dev/packages/quick_button)
+
 ## Usage
 
 **`QuickButton`** behaves similarly to the **`TextButton`** widget but with more customizable features in one place.
