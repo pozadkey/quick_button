@@ -5,6 +5,10 @@ A package that provides multiple customizable buttons for quick use.
 
 ![Demo](https://firebasestorage.googleapis.com/v0/b/mocon-3075b.appspot.com/o/14.08.2023_01.18.45_REC.gif?alt=media&token=b80d9653-a66b-4921-8ab7-3b5c7ef5aa50)
 
+### Resources
+
+- [Pub package](https://pub.dev/packages/quick_button)
+
 ## Usage
 
 **`QuickButton`** behaves similarly to the **`InkWell`** widget but with more customizable features in one place.
