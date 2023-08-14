@@ -3,18 +3,20 @@
 
 A package that provides multiple customizable buttons for quick use.
 
-![Demo](https://firebasestorage.googleapis.com/v0/b/mocon-3075b.appspot.com/o/quick_button.gif?alt=media&token=43f15f4e-021c-4a78-88e3-0eae26b37cc3)
+![Demo](https://firebasestorage.googleapis.com/v0/b/mocon-3075b.appspot.com/o/14.08.2023_01.18.45_REC.gif?alt=media&token=b80d9653-a66b-4921-8ab7-3b5c7ef5aa50)
 
 ## Usage
 
-**`QuickButton`** behaves similarly to the **`TextButton`** widget but with more customizable features in one place.
+**`QuickButton`** behaves similarly to the **`InkWell`** widget but with more customizable features in one place.
 
 - Basic Usage:
 
 ```
      QuickButton(
                 labelText: 'Quick Button',
-                onPressed: () {},
+                onPressed: () {
+                   // Some functions
+                },
               ),
 ```
 - Advanced Usage:
@@ -26,14 +28,18 @@ A package that provides multiple customizable buttons for quick use.
                 labelSize: 13.0,
                 labelWeight: FontWeight.bold,
                 labelSpacing: 0.3,
-                borderRadius: 8.0,
-                buttonSize: 200.0,
+                prefixIcon: Icons.backpack,
+                iconSize: 20.0,
+                buttonWidth: 120,
+                buttonHeight: 30,
                 backgroundColor: Colors.purple,
                 labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
                 labelHoverOut: Colors.white,
                 backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
                 backgroundHoverOut: Colors.purple,
-                onPressed: () {},
+                onPressed: () {
+                  // Some functions
+                },
               ),
 ```
 
@@ -41,15 +47,17 @@ A package that provides multiple customizable buttons for quick use.
 
 | Property           | Description                                                                    |
 |--------------------|--------------------------------------------------------------------------------|
-| labelColor        | Text that defines the button.                                                   |
+| labelText        | Text label of the button.                                                   |
 | labelColor         | Initial color of font color of **`labelText`**.                                      |
 | LabelSize          | Font size of **`labelText`**.                                                         |
 | LabelWeight        | Font weight of **`labelText`**.                                                           |
 | labelSpacing       | Letter spacing of **`labelText`**.                                                    |
+| icon         | Icon centered in the button                                              |
 | prefixIcon         | Icon placed before the **`labelText`**.                                              |
 | suffixIcon         | Icon placed after the **`labelText`**.                                               |
 | iconSize           | Icon size of **`prefixIcon`** & **`suffixIcon`**.                                          |
-| buttonSize         | Width of the button.                                                           |
+| buttonWidth         | Width of the button.                                                           |
+| buttonHeight         | Height of the button.                                                           |
 | borderRadius       | Rounds the corners of the button’s outer border edge to preferred size.        |
 | borderColor        | Color of button’s border edge.                                                 |
 | borderSize         | Button’s border edge size.                                                     |
@@ -58,7 +66,7 @@ A package that provides multiple customizable buttons for quick use.
 | labelHoverOut      | Changes the color of **`labelText`** when the mouse hovers outside the button.       |
 | backgroundHoverIn  | Changes the color of **`backgroundColor`** when the mouse hovers the button.         |
 | backgroundHoverOut | Changes the color of **`backgroundColor`** when the mouse hovers outside the button. |
-| onPressed          | A callback is called when the button is tapped.                                |
+| onPressed          | Callback called upon when the button is tapped.                                |
 
 #### Show some love and star this repo to support the project [here](https://github.com/pozadkey/quick_button). 
 

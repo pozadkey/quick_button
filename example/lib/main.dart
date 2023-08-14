@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Transparent RoundedRectangular Button with prefixIcon
+              // Transparent RoundedRectangular Button with prefixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.purple,
@@ -30,7 +30,6 @@ class MyApp extends StatelessWidget {
                 labelSpacing: 0.3,
                 prefixIcon: Icons.add_task,
                 iconSize: 20.0,
-                buttonSize: 200.0,
                 borderRadius: 25.0,
                 borderColor: Colors.purple,
                 borderSize: 1.5,
@@ -44,7 +43,7 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              // Transparent Rectangular Button with prefixIcon
+              // Transparent Rectangular Button with prefixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.purple,
@@ -53,7 +52,6 @@ class MyApp extends StatelessWidget {
                 labelSpacing: 0.3,
                 prefixIcon: Icons.backpack,
                 iconSize: 20.0,
-                buttonSize: 200.0,
                 borderColor: Colors.purple,
                 borderSize: 1.5,
                 backgroundColor: Colors.transparent,
@@ -66,7 +64,7 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              // Transparent CurvedEdged Button with suffixIcon
+              // Transparent CurvedEdged Button with suffixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.purple,
@@ -75,7 +73,6 @@ class MyApp extends StatelessWidget {
                 labelSpacing: 0.3,
                 suffixIcon: Icons.dark_mode,
                 iconSize: 20.0,
-                buttonSize: 200.0,
                 borderColor: Colors.purple,
                 borderSize: 1.5,
                 borderRadius: 8.0,
@@ -89,7 +86,7 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              // Solid Rectangular Button with prefixIcon
+              // Solid Rectangular Button with prefixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.white,
@@ -98,7 +95,6 @@ class MyApp extends StatelessWidget {
                 labelSpacing: 0.3,
                 prefixIcon: Icons.backpack,
                 iconSize: 20.0,
-                buttonSize: 200.0,
                 backgroundColor: Colors.purple,
                 labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
                 labelHoverOut: Colors.white,
@@ -117,7 +113,6 @@ class MyApp extends StatelessWidget {
                 labelWeight: FontWeight.bold,
                 labelSpacing: 0.3,
                 borderRadius: 25.0,
-                buttonSize: 200.0,
                 backgroundColor: Colors.purple,
                 labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
                 labelHoverOut: Colors.white,
@@ -136,7 +131,63 @@ class MyApp extends StatelessWidget {
                 labelWeight: FontWeight.bold,
                 labelSpacing: 0.3,
                 borderRadius: 8.0,
-                buttonSize: 200.0,
+                backgroundColor: Colors.purple,
+                labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
+                labelHoverOut: Colors.white,
+                backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
+                backgroundHoverOut: Colors.purple,
+                onPressed: () {},
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              // Transparent Rounded Button with an Icon
+              QuickButton(
+                icon: Icons.backpack,
+                labelColor: Colors.purple,
+                iconSize: 18.0,
+                borderColor: Colors.purple,
+                borderSize: 1.5,
+                borderRadius: 100.0,
+                buttonWidth: 30,
+                buttonHeight: 30,
+                backgroundColor: Colors.transparent,
+                labelHoverIn: Colors.white,
+                labelHoverOut: Colors.purple,
+                backgroundHoverIn: Colors.purple,
+                backgroundHoverOut: Colors.transparent,
+                onPressed: () {},
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              // Transparent Rectangular Button with an Icon
+              QuickButton(
+                icon: Icons.backpack,
+                labelColor: Colors.purple,
+                iconSize: 18.0,
+                buttonWidth: 30,
+                buttonHeight: 30,
+                borderColor: Colors.purple,
+                borderSize: 1.5,
+                backgroundColor: Colors.transparent,
+                labelHoverIn: Colors.white,
+                labelHoverOut: Colors.purple,
+                backgroundHoverIn: Colors.purple,
+                backgroundHoverOut: Colors.transparent,
+                onPressed: () {},
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              // Solid Rectangular Button with prefixIcon
+              QuickButton(
+                icon: Icons.backpack,
+                labelColor: Colors.white,
+                iconSize: 18.0,
+                borderRadius: 25.0,
+                buttonWidth: 30,
+                buttonHeight: 30,
                 backgroundColor: Colors.purple,
                 labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
                 labelHoverOut: Colors.white,

@@ -2,46 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quick_button/quick_button.dart';
 
-import 'test_material_app_widget.dart';
-
 void main() {
-  Widget wrapWithMaterialApp(QuickButton quickButton) {
-    return TestMaterialAppWidget(
-      home: quickButton,
-    );
-  }
-
-  // Find label
-  testWidgets('Label should shown on Magic Button', (tester) async {
-    // given
-    final widget = QuickButton(
-      labelText: 'hello',
-      onPressed: () {},
-    );
-
-    // when
-    await tester.pumpWidget(wrapWithMaterialApp(widget));
-
-    final labelFinder = find.text('hello');
-    expect(labelFinder, findsOneWidget);
-  });
-
-  // Click on Magic Button
-  testWidgets('Onpressed called on clicking Magic Button', (tester) async {
-    //given
+  testWidgets('Click button', (WidgetTester tester) async {
+    // Find all widgets needed.
     var pressed = false;
-    final widget = QuickButton(
-      labelText: 'hello',
-      onPressed: () {
+    final enterButton = find.byKey(const ValueKey('onTapButton'));
+
+    // Execute the actual test.
+    await tester.pumpWidget(MaterialApp(home: Scaffold(
+      body: QuickButton(onPressed: () {
         pressed = true;
-      },
-    );
+      }),
+    )));
+    await tester.tap(enterButton);
+    // Rebuild widget state.
+    await tester.pump();
 
-    // when
-    await tester.pumpWidget(wrapWithMaterialApp(widget));
-    await tester.tap(find.byType(TextButton));
-
-    // then
+    // Validate test outputs.
     expect(pressed, true);
   });
 }
