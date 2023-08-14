@@ -9,5 +9,9 @@
 * Added Documentation.
 * Updated ReadME.md.
 
+## 0.1. - 14/08/2023
+
+* Fixed Documentation.
+
 
 

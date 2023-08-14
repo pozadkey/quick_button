@@ -1,15 +1,21 @@
+/// Import Material package.
 import 'package:flutter/material.dart';
+
+/// Import Quick Button package.
 import 'package:quick_button/quick_button.dart';
 
+/// Run the application.
 void main() {
   runApp(const MyApp());
 }
 
+/// Build a stateless App widget.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    /// Build Material widget to render the UI.
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -21,7 +27,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Transparent RoundedRectangular Button with prefixIcon.
+              /// Transparent RoundedRectangular Button with prefixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.purple,
@@ -38,12 +44,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.purple,
                 backgroundHoverIn: Colors.purple,
                 backgroundHoverOut: Colors.transparent,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Transparent Rectangular Button with prefixIcon.
+
+              /// Transparent Rectangular Button with prefixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.purple,
@@ -59,12 +68,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.purple,
                 backgroundHoverIn: Colors.purple,
                 backgroundHoverOut: Colors.transparent,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Transparent CurvedEdged Button with suffixIcon.
+
+              /// Transparent CurvedEdged Button with suffixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.purple,
@@ -81,12 +93,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.purple,
                 backgroundHoverIn: Colors.purple,
                 backgroundHoverOut: Colors.transparent,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Solid Rectangular Button with prefixIcon.
+
+              /// Solid Rectangular Button with prefixIcon.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.white,
@@ -100,12 +115,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.white,
                 backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
                 backgroundHoverOut: Colors.purple,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Solid RoundedRectangular Button
+
+              /// Solid RoundedRectangular Button.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.white,
@@ -118,12 +136,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.white,
                 backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
                 backgroundHoverOut: Colors.purple,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Transparent CurvedEdged Button
+
+              /// Transparent CurvedEdged Button.
               QuickButton(
                 labelText: 'Quick Button',
                 labelColor: Colors.white,
@@ -136,12 +157,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.white,
                 backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
                 backgroundHoverOut: Colors.purple,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Transparent Rounded Button with an Icon
+
+              /// Transparent Rounded Button with an Icon.
               QuickButton(
                 icon: Icons.backpack,
                 labelColor: Colors.purple,
@@ -156,12 +180,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.purple,
                 backgroundHoverIn: Colors.purple,
                 backgroundHoverOut: Colors.transparent,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Transparent Rectangular Button with an Icon
+
+              /// Transparent Rectangular Button with an Icon.
               QuickButton(
                 icon: Icons.backpack,
                 labelColor: Colors.purple,
@@ -175,12 +202,15 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.purple,
                 backgroundHoverIn: Colors.purple,
                 backgroundHoverOut: Colors.transparent,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
               const SizedBox(
                 height: 15,
               ),
-              // Solid Rectangular Button with prefixIcon
+
+              /// Solid Rectangular Button with prefixIcon.
               QuickButton(
                 icon: Icons.backpack,
                 labelColor: Colors.white,
@@ -193,7 +223,9 @@ class MyApp extends StatelessWidget {
                 labelHoverOut: Colors.white,
                 backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
                 backgroundHoverOut: Colors.purple,
-                onPressed: () {},
+                onPressed: () {
+                  /// Excute function.
+                },
               ),
             ],
           ),
