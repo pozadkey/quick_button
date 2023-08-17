@@ -1,76 +1,103 @@
-# Quick Button
-[![pub - v0.0.1](https://img.shields.io/badge/pub-v0.0.1-blue)](https://) [![unit test - passing](https://img.shields.io/badge/unit_test-passing-2ea44f?logo=github)](https://) [![license - MIT](https://img.shields.io/badge/license-MIT-blue)](https://)
+# QuickButton
+[![pub - v0.0.1](https://img.shields.io/badge/pub-v0.0.1-blue)](https://) [![unit test - passing](https://img.shields.io/badge/unit_test-passing-2ea44f?logo=github)](https://) [![license - MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/mit)
 
-A package that provides multiple customizable buttons for quick use.
+A customizable button widget for Flutter applications that allows you to easily create buttons with various attributes and behaviors.
 
 ![Demo](https://firebasestorage.googleapis.com/v0/b/mocon-3075b.appspot.com/o/14.08.2023_01.18.45_REC.gif?alt=media&token=b80d9653-a66b-4921-8ab7-3b5c7ef5aa50)
 
-### Resources
+## Resources
 
-- [Pub package](https://pub.dev/packages/quick_button)
+- [Pub package](https://pub.dev/packages/quick_button).
+ - [Github](https://github.com/pozadkey/quick_button).
+
+## Installation
+
+To use this package, add `quick_button` as a dependency in your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  quick_button: ^1.0.0 # Use the latest version
+```
 
 ## Usage
 
-**`QuickButton`** behaves similarly to the **`InkWell`** widget but with more customizable features in one place.
+Import the package in your Dart code:
 
-- Basic Usage:
-
-```
-     QuickButton(
-                labelText: 'Quick Button',
-                onPressed: () {
-                   // Some functions
-                },
-              ),
-```
-- Advanced Usage:
-
-```
-     QuickButton(
-                labelText: 'Quick Button',
-                labelColor: Colors.white,
-                labelSize: 13.0,
-                labelWeight: FontWeight.bold,
-                labelSpacing: 0.3,
-                prefixIcon: Icons.backpack,
-                iconSize: 20.0,
-                buttonWidth: 120,
-                buttonHeight: 30,
-                backgroundColor: Colors.purple,
-                labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
-                labelHoverOut: Colors.white,
-                backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
-                backgroundHoverOut: Colors.purple,
-                onPressed: () {
-                  // Some functions
-                },
-              ),
+```dart
+import 'package:quick_button/quick_button.dart';
 ```
 
-## Properties
+You can then use the `QuickButton` widget to create buttons with different variations:
 
-| Property           | Description                                                                    |
-|--------------------|--------------------------------------------------------------------------------|
-| labelText        | Text label of the button.                                                   |
-| labelColor         | Initial color of font color of **`labelText`**.                                      |
-| LabelSize          | Font size of **`labelText`**.                                                         |
-| LabelWeight        | Font weight of **`labelText`**.                                                           |
-| labelSpacing       | Letter spacing of **`labelText`**.                                                    |
-| icon         | Icon centered in the button                                              |
-| prefixIcon         | Icon placed before the **`labelText`**.                                              |
-| suffixIcon         | Icon placed after the **`labelText`**.                                               |
-| iconSize           | Icon size of **`prefixIcon`** & **`suffixIcon`**.                                          |
-| buttonWidth         | Width of the button.                                                           |
-| buttonHeight         | Height of the button.                                                           |
-| borderRadius       | Rounds the corners of the button’s outer border edge to preferred size.        |
-| borderColor        | Color of button’s border edge.                                                 |
-| borderSize         | Button’s border edge size.                                                     |
-| backgroundColor    | Background color of button.                                                    |
-| labelHoverIn       | Changes the color of **`labelText`** when the mouse hovers the button.               |
-| labelHoverOut      | Changes the color of **`labelText`** when the mouse hovers outside the button.       |
-| backgroundHoverIn  | Changes the color of **`backgroundColor`** when the mouse hovers the button.         |
-| backgroundHoverOut | Changes the color of **`backgroundColor`** when the mouse hovers outside the button. |
-| onPressed          | Callback called upon when the button is tapped.                                |
+```dart
+QuickButton(
+  labelText: 'Submit',
+  onPressed: () {
+    // Action to perform when the button is pressed
+  },
+)
 
-#### Show some love and star this repo to support the project [here](https://github.com/pozadkey/quick_button). 
+QuickButton.icon(
+  icon: Icons.star,
+  onPressed: () {
+    // Action to perform when the button is pressed
+  },
+)
+
+QuickButton.prefixIcon(
+  labelText: 'Start',
+  prefixIcon: Icons.play_arrow,
+  onPressed: () {
+    // Action to perform when the button is pressed
+  },
+)
+
+QuickButton.suffixIcon(
+  labelText: 'End',
+  suffixIcon: Icons.stop,
+  onPressed: () {
+    // Action to perform when the button is pressed
+  },
+)
+```
+
+## Attributes
+
+- `labelText`: The label text displayed on the button.
+- `labelColor`: The color of the label text.
+- `labelSize`: The font size of the label text.
+- `labelWeight`: The font weight of the label text.
+- `labelSpacing`: The spacing between characters in the label text.
+- `icon`: The icon placed within the button.
+- `prefixIcon`: The icon placed before the label text.
+- `suffixIcon`: The icon placed after the label text.
+- `iconSize`: The size of all icons. Default value is `15.0`.
+- `buttonWidth`: The width of the button. Default value is `150.0`.
+- `buttonHeight`: The height of the button.
+- `borderRadius`: The degree of the roundness for the corners of the button.
+- `borderColor`: The color of the border surrounding the button.
+- `borderSize`: The width of the border surrounding the button. Default value is `1.0`.
+- `backgroundColor`: The background color of the button.
+- `hoverIn`: The color of the label text when the mouse moves within the widget.
+- `backgroundHoverIn`: The background color of button when the mouse moves within the widget.
+- `hoverOut`: The color of the label text when the mouse moves outside the widget.
+- `backgroundHoverOut`: The background color of button when the mouse moves outside the widget.
+- `onPressed`: Callback function to execute when the button is pressed.
+
+
+
+## Callback
+
+All variations of the `QuickButton` widget require an `onPressed` callback function that gets triggered when the button is pressed.
+
+## License
+
+This package is released under the [MIT License](https://opensource.org/license/mit).
+
+## Contributions
+
+Contributions are welcome! If you find any issues or want to enhance this package, feel free to submit a pull request [here](https://github.com/pozadkey/quick_button).
+ 
 

@@ -1,21 +1,16 @@
-/// Import Material package.
 import 'package:flutter/material.dart';
 
-/// Import Quick Button package.
 import 'package:quick_button/quick_button.dart';
 
-/// Run the application.
 void main() {
   runApp(const MyApp());
 }
 
-/// Build a stateless App widget.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    /// Build Material widget to render the UI.
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -27,204 +22,112 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              /// Transparent RoundedRectangular Button with prefixIcon.
               QuickButton(
-                labelText: 'Quick Button',
+                labelText: 'Submit',
                 labelColor: Colors.purple,
                 labelSize: 13.0,
                 labelWeight: FontWeight.bold,
                 labelSpacing: 0.3,
-                prefixIcon: Icons.add_task,
-                iconSize: 20.0,
+                borderColor: Colors.purple,
+                borderSize: 1.5,
+                backgroundColor: Colors.transparent,
+                hoverIn: Colors.white,
+                hoverOut: Colors.purple,
+                backgroundHoverIn: Colors.purple,
+                backgroundHoverOut: Colors.transparent,
+                onPressed: () {
+                  // Action to perform when the button is pressed
+                },
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              QuickButton.icon(
+                icon: Icons.star,
+                labelColor: Colors.purple,
+                buttonHeight: 30.0,
+                buttonWidth: 30.0,
+                borderColor: Colors.purple,
+                borderSize: 1.5,
+                backgroundColor: Colors.transparent,
+                hoverIn: Colors.white,
+                hoverOut: Colors.purple,
+                backgroundHoverIn: Colors.purple,
+                backgroundHoverOut: Colors.transparent,
+                onPressed: () {
+                  // Action to perform when the button is pressed
+                },
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              QuickButton.prefixIcon(
+                labelText: 'Quick Button',
+                labelColor: Colors.white,
+                prefixIcon: Icons.play_arrow,
+                borderRadius: 25.0,
+                borderColor: Colors.transparent,
+                borderSize: 1.5,
+                labelWeight: FontWeight.w700,
+                backgroundColor: Colors.purple,
+                hoverIn: Colors.purple[800],
+                hoverOut: Colors.white,
+                backgroundHoverIn: const Color.fromARGB(162, 155, 39, 176),
+                backgroundHoverOut: Colors.purple,
+                onPressed: () {
+                  // Action to perform when the button is pressed
+                },
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              QuickButton.suffixIcon(
+                labelText: 'End',
+                labelColor: Colors.purple,
+                suffixIcon: Icons.stop,
+                borderRadius: 5.0,
+                borderColor: Colors.purple,
+                borderSize: 1.5,
+                backgroundColor: Colors.transparent,
+                hoverIn: Colors.white,
+                hoverOut: Colors.purple,
+                backgroundHoverIn: Colors.purple,
+                backgroundHoverOut: Colors.transparent,
+                onPressed: () {
+                  // Action to perform when the button is pressed
+                },
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              QuickButton.icon(
+                icon: Icons.book,
+                labelColor: Colors.white,
+                buttonHeight: 30.0,
+                buttonWidth: 30.0,
                 borderRadius: 25.0,
                 borderColor: Colors.purple,
                 borderSize: 1.5,
-                backgroundColor: Colors.transparent,
-                labelHoverIn: Colors.white,
-                labelHoverOut: Colors.purple,
-                backgroundHoverIn: Colors.purple,
-                backgroundHoverOut: Colors.transparent,
-                onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Transparent Rectangular Button with prefixIcon.
-              QuickButton(
-                labelText: 'Quick Button',
-                labelColor: Colors.purple,
-                labelSize: 13.0,
-                labelWeight: FontWeight.bold,
-                labelSpacing: 0.3,
-                prefixIcon: Icons.backpack,
-                iconSize: 20.0,
-                borderColor: Colors.purple,
-                borderSize: 1.5,
-                backgroundColor: Colors.transparent,
-                labelHoverIn: Colors.white,
-                labelHoverOut: Colors.purple,
-                backgroundHoverIn: Colors.purple,
-                backgroundHoverOut: Colors.transparent,
-                onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Transparent CurvedEdged Button with suffixIcon.
-              QuickButton(
-                labelText: 'Quick Button',
-                labelColor: Colors.purple,
-                labelSize: 13.0,
-                labelWeight: FontWeight.bold,
-                labelSpacing: 0.3,
-                suffixIcon: Icons.dark_mode,
-                iconSize: 20.0,
-                borderColor: Colors.purple,
-                borderSize: 1.5,
-                borderRadius: 8.0,
-                backgroundColor: Colors.transparent,
-                labelHoverIn: Colors.white,
-                labelHoverOut: Colors.purple,
-                backgroundHoverIn: Colors.purple,
-                backgroundHoverOut: Colors.transparent,
-                onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Solid Rectangular Button with prefixIcon.
-              QuickButton(
-                labelText: 'Quick Button',
-                labelColor: Colors.white,
-                labelSize: 13.0,
-                labelWeight: FontWeight.bold,
-                labelSpacing: 0.3,
-                prefixIcon: Icons.backpack,
-                iconSize: 20.0,
                 backgroundColor: Colors.purple,
-                labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
-                labelHoverOut: Colors.white,
-                backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
+                hoverIn: Colors.purple,
+                hoverOut: Colors.white,
+                backgroundHoverIn: Colors.white,
                 backgroundHoverOut: Colors.purple,
                 onPressed: () {
-                  /// Excute function.
+                  // Action to perform when the button is pressed
                 },
               ),
               const SizedBox(
                 height: 15,
               ),
-
-              /// Solid RoundedRectangular Button.
               QuickButton(
-                labelText: 'Quick Button',
-                labelColor: Colors.white,
-                labelSize: 13.0,
-                labelWeight: FontWeight.bold,
-                labelSpacing: 0.3,
-                borderRadius: 25.0,
-                backgroundColor: Colors.purple,
-                labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
-                labelHoverOut: Colors.white,
-                backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
-                backgroundHoverOut: Colors.purple,
-                onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Transparent CurvedEdged Button.
-              QuickButton(
-                labelText: 'Quick Button',
-                labelColor: Colors.white,
-                labelSize: 13.0,
-                labelWeight: FontWeight.bold,
-                labelSpacing: 0.3,
-                borderRadius: 8.0,
-                backgroundColor: Colors.purple,
-                labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
-                labelHoverOut: Colors.white,
-                backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
-                backgroundHoverOut: Colors.purple,
-                onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Transparent Rounded Button with an Icon.
-              QuickButton(
-                icon: Icons.backpack,
+                labelText: 'Link',
                 labelColor: Colors.purple,
-                iconSize: 18.0,
-                borderColor: Colors.purple,
-                borderSize: 1.5,
-                borderRadius: 100.0,
-                buttonWidth: 30,
-                buttonHeight: 30,
-                backgroundColor: Colors.transparent,
-                labelHoverIn: Colors.white,
-                labelHoverOut: Colors.purple,
-                backgroundHoverIn: Colors.purple,
-                backgroundHoverOut: Colors.transparent,
+                hoverIn: Colors.black,
+                hoverOut: Colors.purple,
+                backgroundColor: Colors.white,
                 onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Transparent Rectangular Button with an Icon.
-              QuickButton(
-                icon: Icons.backpack,
-                labelColor: Colors.purple,
-                iconSize: 18.0,
-                buttonWidth: 30,
-                buttonHeight: 30,
-                borderColor: Colors.purple,
-                borderSize: 1.5,
-                backgroundColor: Colors.transparent,
-                labelHoverIn: Colors.white,
-                labelHoverOut: Colors.purple,
-                backgroundHoverIn: Colors.purple,
-                backgroundHoverOut: Colors.transparent,
-                onPressed: () {
-                  /// Excute function.
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              /// Solid Rectangular Button with prefixIcon.
-              QuickButton(
-                icon: Icons.backpack,
-                labelColor: Colors.white,
-                iconSize: 18.0,
-                borderRadius: 25.0,
-                buttonWidth: 30,
-                buttonHeight: 30,
-                backgroundColor: Colors.purple,
-                labelHoverIn: const Color.fromARGB(255, 63, 63, 63),
-                labelHoverOut: Colors.white,
-                backgroundHoverIn: const Color.fromARGB(112, 226, 33, 243),
-                backgroundHoverOut: Colors.purple,
-                onPressed: () {
-                  /// Excute function.
+                  // Action to perform when the button is pressed
                 },
               ),
             ],

@@ -1,6 +1,6 @@
 name: quick_button
-description: A package that provides multiple customizable buttons for quick use.
-version: 0.1.2
+description: A customizable button widget for Flutter applications that allows you to easily create buttons with various attributes and behaviors.
+version: 1.0.0
 homepage: https://github.com/pozadkey/quick_button
 repository: https://github.com/pozadkey/quick_button
 
